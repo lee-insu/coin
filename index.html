@@ -20,7 +20,7 @@
                 <img src="" alt="">
             </div>
             <div class="content-btn">
-                <button onclick="random(coinList);">실행</button>
+                <button class="aa" onclick="random(coinList); clickEvent();">실행</button>
             </div>
             <div class="kk"></div>
             <div class="content-text">
@@ -30,7 +30,12 @@
         </div>
        
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="../static/random.js"></script>
+    <script>
+        function clickEvent() {
+            $('.aa').hide();
+        }
+    </script>
 </body>
 </html>
