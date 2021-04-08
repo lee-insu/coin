@@ -51,10 +51,10 @@
                    </div>
                    <div class="result-coin rst-up"></div>
                 <div class="content-text">
-                 미친 앵무새를 클릭해 신탁을 받으십시오
+                 미친 앵무새를 클릭해 <br>신탁을 받으십시오
                 </div>
                 <div class="loading-text">
-                    미친 앵무새가 신탁을 내리고 있습니다..
+                    미친 앵무새가 신탁을 <br>내리고 있습니다..
                 </div>
                 <button class="replay rpy-up"onclick="location.replace('index.html');">한 번만 더요..!</button>
             </div>
@@ -63,28 +63,6 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="../static/random.js"></script>
-    <script>
-        $('.replay').hide();
-        $('.content-explanation').hide();
-        $('.result-img').hide();
-        $('.loading-img').hide();
-        $('.loading-text').hide();
-        function clickEvent() {
-            $('.content-text').hide();
-            $('.click-img').hide();
-            $('.result-coin').hide();
-            $('.loading-img').show();
-            $('.loading-text').show();
-
-            setTimeout(function() {
-                $('.loading-img').hide();
-                $('.loading-text').hide();
-                $('.replay').show();
-                $('.result-coin').show();
-                $('.content-explanation').show();
-                $('.result-img').show();
-            },2500);
-        }
-    </script>
+    <script src="../static/moving.js"></script>
 </body>
 </html>
