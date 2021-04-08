@@ -19,3 +19,23 @@ function clickEvent() {
         $('.result-img').show();
     },2000);
 }
+
+function reload() {
+    $('.content-text').hide();
+    $('.click-img').hide();
+    $('.result-img').hide();
+    $('.content-explanation').hide();
+    $('.replay').hide();
+    $('.result-coin').hide();
+    $('.loading-img').show();
+    $('.loading-text').show();
+
+    setTimeout(function() {
+        $('.loading-img').hide();
+        $('.loading-text').hide();
+        $('.replay').show();
+        $('.result-coin').show();
+        $('.content-explanation').show();
+        $('.result-img').show();
+    },2000);
+}
