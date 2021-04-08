@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>앵무새의 픽</title>
+    <title>코인만 보면 짖는 앵무새</title>
     <link rel="stylesheet" href="../static/style.css">
     
 </head>
 <body>
     <header>
         <nav class="inner">
-            <img src="" alt="">
+            <div class="header-ctn">
+            <div class="logo">코인만 보면 짖는 앵무새</div>
+            </div>
         </nav>
     </header>
     <section>
         <div class="inner">
-            <div class="content-container">
+            <div class="content-ctn">
             <div class="content-img">
-                <img src="" alt="">
+                <img class="click-img" src="../static/Img/코인의새.jpg" alt="" onclick="document.querySelector('.click-btn').click();">
+                <img class= "result-img" src="../static/Img/결과.jpg" alt="">
             </div>
             <div class="content-btn">
-                <button class="aa" onclick="random(coinList); clickEvent();">실행</button>
+                <button class="click-btn" onclick="random(coinList); clickEvent();"></button>
                 </div>
-                <div class="kk"></div>
+                
+                <div class="content-explanation">
+                    당신에게 내려진 코인은
+                   </div>
+                   <div class="result-coin"></div>
                 <div class="content-text">
-                 dd
+                 미친 앵무새를 클릭해 신탁을 받으십시오
                 </div>
-                <button onclick="location.replace('index.html');">다시시도</button>
+                <button class="replay"onclick="location.replace('index.html');">다시시도</button>
             </div>
         </div>
        
@@ -34,8 +41,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="../static/random.js"></script>
     <script>
+        $('.replay').hide();
+        $('.content-explanation').hide();
+        $('.result-img').hide();
         function clickEvent() {
-            $('.aa').hide();
+            $('.content-text').hide();
+            $('.click-img').hide();
+            $('.replay').show();
+            $('.content-explanation').show();
+            $('.result-img').show();
+     
         }
     </script>
 </body>

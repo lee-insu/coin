@@ -118,18 +118,12 @@ let coinList = [	["리플"],
                     ["하이브"],
 ]
 
-                  
-                  
-                  
-                    
-
 
 function random(data) {
 
-    lotCnt= 1;	//추첨인원
-    datalotCnt = data.length;	//자료수
-    coinPick = new Array(datalotCnt);	//당첨번호
-    coinPick[0] = 0;
+    lotCnt= 1;
+    datalotCnt = data.length;	
+    coinPick = new Array(datalotCnt);	
 
     for (let i=0; i<=lotCnt; i++)
     {
@@ -167,7 +161,7 @@ function random(data) {
     for (let i=1; i<=lotCnt; i++) 
     {
      console.log(data[coinPick[i]][0]);
-     const coinShow = document.querySelector(".kk");
+     const coinShow = document.querySelector(".result-coin");
      coinShow.innerText = `${data[coinPick[i]][0]}`;
     
     }
