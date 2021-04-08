@@ -40,17 +40,21 @@
             <div class="content-img">
                 <img class="click-img" src="../static/Img/업비트1.jpg" alt="" onclick="document.querySelector('.click-btn').click();">
                 <img class= "result-img" src="../static/Img/업비트2.jpg" alt="">
+                <img class= "loading-img" src="../static/Img/업비트3.gif" alt="">
             </div>
             <div class="content-btn">
                 <button class="click-btn" onclick="random(upbitList); clickEvent();"></button>
                 </div>
-                
+                <img src="../static/Img/ㅁ." alt="">
                 <div class="content-explanation">
                     당신에게 내려진 코인은
                    </div>
                    <div class="result-coin rst-up"></div>
                 <div class="content-text">
                  미친 앵무새를 클릭해 신탁을 받으십시오
+                </div>
+                <div class="loading-text">
+                    미친 앵무새가 신탁을 내리고 있습니다..
                 </div>
                 <button class="replay rpy-up"onclick="location.replace('index.html');">한 번만 더요..!</button>
             </div>
@@ -63,13 +67,23 @@
         $('.replay').hide();
         $('.content-explanation').hide();
         $('.result-img').hide();
+        $('.loading-img').hide();
+        $('.loading-text').hide();
         function clickEvent() {
             $('.content-text').hide();
             $('.click-img').hide();
-            $('.replay').show();
-            $('.content-explanation').show();
-            $('.result-img').show();
-     
+            $('.result-coin').hide();
+            $('.loading-img').show();
+            $('.loading-text').show();
+
+            setTimeout(function() {
+                $('.loading-img').hide();
+                $('.loading-text').hide();
+                $('.replay').show();
+                $('.result-coin').show();
+                $('.content-explanation').show();
+                $('.result-img').show();
+            },2500);
         }
     </script>
 </body>

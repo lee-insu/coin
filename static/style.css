@@ -66,10 +66,9 @@ section{position: relative;}
 
 
 }
-.result-img {
+.result-img, .loading-img {
     width: 375px;
     height: auto;
-    cursor: pointer;
 
 }
 
@@ -89,7 +88,7 @@ section{position: relative;}
     text-align: center;
 }
 
-.content-text {
+.content-text, .loading-text {
     font-family: 'GmarketSansMedium';
     margin-top:1em;
     font-size: 1.5rem;
