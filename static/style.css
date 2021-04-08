@@ -18,8 +18,8 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 .nanummyeongjo * {
  font-family: 'Nanum Myeongjo', serif;
 }
@@ -105,22 +105,50 @@ section{position: relative;}
 .result-coin {
     font-family: 'GmarketSansBold';
     font-size: 3.5em;
-    color:#ffcb1f;
+    
     
 }
 
-.replay {
+.rst-up {
+    color:#1f79ff;
+}
+
+.rst-bit {
+    color:#ffcb1f;
+}
+
+.rpy-up {
+    background-color: #1f93fff5;
+}
+.rpy-bit{
     background-color: #ffb81ff5;
+}
+.replay {
     margin-top: 1em;
     border: none;
     color: white;
     font-family: 'GmarketSansBold';
     text-align: center;
     padding: 0.5em;
-    font-size: 1.3em;
+    font-size: 1.1em;
     cursor: pointer;
     border-radius: 1em;
 }
+
+.location {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'GmarketSansMedium';
+    margin-top: 3em;
+    font-size:1.2rem;
+
+}
+.location > :nth-child(1) {
+    margin: 0 1em;
+}
+
 
 @media only screen and (min-width:1205px) {
     .inner {
