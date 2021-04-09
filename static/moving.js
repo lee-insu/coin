@@ -13,6 +13,7 @@ function clickEvent() {
     setTimeout(function() {
         $('.loading-img').hide();
         $('.loading-text').hide();
+        $('.location').hide();
         $('.replay').show();
         $('.result-coin').show();
         $('.content-explanation').show();
@@ -32,6 +33,7 @@ function reload() {
 
     setTimeout(function() {
         $('.loading-img').hide();
+        $('.location').hide();
         $('.loading-text').hide();
         $('.replay').show();
         $('.result-coin').show();
