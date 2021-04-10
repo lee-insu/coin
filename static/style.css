@@ -151,6 +151,16 @@ section{position: relative;}
     text-align: center;
 }
 
+.give-ctn {
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+}
+.give-title {
+    font-family:'GmarketSansMedium';
+    font-size: 1.5rem;
+    margin-bottom: 0.3em;
+}
 
 @media only screen and (min-width:1205px) {
     .inner {
