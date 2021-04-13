@@ -162,6 +162,42 @@ section{position: relative;}
     margin-bottom: 0.3em;
 }
 
+.youtube-ctn, .youtube-link{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.youtube-link > div {
+    font-family: 'GmarketSansMedium';
+    font-size: 1.3rem;
+}
+
+.youtuber-list {
+    width: 100%;
+    text-align: center;
+}
+
+.youtuber-list > p {
+    font-family: 'GmarketSansMedium';
+    font-size: 1.7rem;
+}
+
+.youtube-list > li {
+    margin-top: 1em;
+    font-family: 'GmarketSansMedium';
+    color: #464646;
+    font-size: 1rem;
+}
+.youtube-list > li> a:hover {
+    color: #f82e2e;
+}
+
+.youtube-etc {
+        text-align: center;
+        color: #adadad;
+}
+
 @media only screen and (min-width:1205px) {
     .inner {
         width: 1205px;
