@@ -171,6 +171,7 @@ section{position: relative;}
 .youtube-link > div {
     font-family: 'GmarketSansMedium';
     font-size: 1.3rem;
+    color:#000000;
 }
 
 .youtuber-list {
@@ -196,6 +197,23 @@ section{position: relative;}
 .youtube-etc {
         text-align: center;
         color: #adadad;
+}
+
+.coin-weather {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coin-weather > div {
+    font-family: 'GmarketSansMedium';
+    font-size: 1.5em;
+}
+.coin-weather > p {
+    font-family: 'GmarketSansMedium';
+    font-size: 1.3em;
+    color:#6b6b6b;
+    margin: 0;
 }
 
 @media only screen and (min-width:1205px) {
