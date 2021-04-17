@@ -258,7 +258,9 @@ button {background-color: #fff;cursor: pointer; border:none; }
   .hidden {
     display: none;
   }
-
+.ee {
+    text-align: center;
+}
 
 
 @media only screen and (min-width:1205px) {
